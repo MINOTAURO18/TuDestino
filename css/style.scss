@@ -356,7 +356,10 @@ section {
         gap: 2rem;
         grid-template-columns: repeat(auto-fill,minmax(25rem,1fr));
 
-        
+         p{
+          width: 100%;
+          height: auto;
+         }
 
          div{
           display: flex;
@@ -368,6 +371,11 @@ section {
           width: 500px;
           height: auto;
           border-radius: 7px;
+         }
+         @media (max-width: 530px){
+           div img{
+            width: 300px;
+           } 
          }
        }
 
@@ -408,11 +416,13 @@ section {
   background-color:  rgb(233, 236, 240);
   width: 100%;
   height: auto;
-  padding: 60px 8vw;
+  padding: 60px 8vw 0px 8vw;
   min-height: 60vh;
+
 
    .redes{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 1px solid rgb(177, 169, 169) ;
 
@@ -420,6 +430,38 @@ section {
       display: flex;
       gap: 20px;
      }
+   }
+
+   .info{
+    
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+     div{
+      display: flex;
+      flex-direction: column;
+      width: 210px;
+      height: 140px;
+     }
+   }
+
+   .logos{
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+     span{
+       color: #d05d05;
+       font-size: 1.7rem;
+       font-weight: 600;
+     }
+
+     
    }
 }
 
