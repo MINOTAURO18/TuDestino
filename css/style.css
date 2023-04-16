@@ -1,0 +1,357 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header.scrolled {
+  background-color: #111;
+  transition: all 0.2s ease-in-out;
+}
+
+section {
+  background: #111;
+  min-height: 100vh;
+}
+section .bannerVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section .bannerVideo video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+}
+section .bannerVideo video.active {
+  opacity: 1;
+}
+section .container {
+  position: relative;
+  padding: 0 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
+section .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.05);
+}
+section .container .header {
+  z-index: 99;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+section .container .header .logo {
+  font-weight: 700;
+  color: #d05d05;
+  font-size: 1.8em;
+  text-decoration: none;
+}
+section .container .header ul {
+  position: relative;
+  display: flex;
+}
+section .container .header ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+section .container .header ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 4px 10px;
+  color: rgb(255, 255, 255);
+}
+section .container .header ul li a span {
+  color: #d05d05;
+}
+section .container .header ul li a:hover {
+  background: #fff;
+  color: #111;
+  transition: all 0.1s ease-in-out;
+}
+section .container .header .menuIcon {
+  display: none;
+}
+@media (max-width: 991px) {
+  section .container .header ul {
+    display: none;
+  }
+  section .container .header {
+    justify-content: center;
+    position: absolute;
+  }
+}
+section .container .content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section .container .content .bannerText {
+  position: relative;
+  max-width: 700px;
+}
+section .container .content .bannerText div {
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+section .container .content .bannerText div h2 {
+  color: #ffffff;
+  font-size: 4em;
+  line-height: 1em;
+  font-weight: 700;
+}
+section .container .content .bannerText div p {
+  width: 75%;
+  color: #fff;
+  font-size: 18px;
+  margin: 20px 0;
+}
+section .container .content .bannerText div p span {
+  color: #d05d05;
+}
+@media (max-width: 992px) {
+  section .container .content .bannerText div p {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  section .container .content .bannerText div p {
+    width: 58%;
+  }
+  section .container .content .bannerText div h2 {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  section .container .content .bannerText div p {
+    width: 70%;
+  }
+  section .container .content .bannerText div h2 {
+    font-size: 3.5rem;
+  }
+}
+section .container .content .bannerText div.active {
+  display: initial;
+}
+section .section-two {
+  background-color: rgb(233, 236, 240);
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 15vh 0 10vh 0;
+}
+section .section-two h2 {
+  text-align: center;
+  color: #d05d05;
+  font-size: 2.5rem;
+}
+section .section-two .cards {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 0 0 7px 7px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+}
+section .section-two .cards .card {
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 500px;
+  height: auto;
+  border-radius: 7px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease-in-out;
+}
+section .section-two .cards .card .descrip {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+section .section-two .cards .card .descrip h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+section .section-two .cards .card .descrip h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+section .section-two .cards .card .descrip h6 {
+  font-size: 12px;
+  font-weight: 400;
+}
+section .section-two .cards .card span {
+  color: #fbf6f6;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: #d05d05;
+  width: 115px;
+  height: 22px;
+  border: 1px solid #d05d05;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+section .section-two .cards .card .span2 {
+  border: rgb(70, 3, 97);
+  background-color: rgb(70, 3, 97);
+}
+section .section-two .cards .card .span3 {
+  border: rgb(4, 142, 25);
+  background-color: rgb(4, 142, 25);
+}
+section .section-two .cards .card .span4 {
+  border: rgb(36, 10, 204);
+  background-color: rgb(36, 10, 204);
+}
+section .section-two .cards .card .span5 {
+  border: rgb(67, 64, 84);
+  background-color: rgb(67, 64, 84);
+}
+section .section-two .cards .card .precio {
+  border-top: 1px solid rgb(207, 201, 201);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+section .section-two .cards .card .precio .antes {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+section .section-two .cards .card .precio h3 {
+  font-weight: 400;
+  font-size: 25px;
+}
+section .section-two .cards .card .precio h5 {
+  font-weight: 400;
+  font-size: 12px;
+}
+section .section-two .cards .card .precio h6 {
+  font-weight: 500;
+  font-size: 12px;
+}
+section .section-two .cards .card .foto img {
+  border-radius: 7px 7px 0 0;
+}
+section .section-two .cards .card:hover {
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-2px);
+}
+
+.section-three {
+  background-color: rgb(233, 236, 240);
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+@media (max-width: 991px) {
+  section .container {
+    padding: 20px;
+  }
+  section .container:before {
+    width: 100%;
+  }
+  section .container header {
+    padding: 10px 20px;
+  }
+  section .container header ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  section .container header ul li {
+    text-align: center;
+    margin: 10px;
+  }
+  section .container header ul li a {
+    color: #333;
+    font-size: 1.5em;
+  }
+  section .container header ul li a:hover {
+    color: #f00;
+  }
+  section .container header .menuIcon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: initial;
+    z-index: 10000;
+    background: #fff url(../img/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  section .container header .menuIcon.active {
+    background: #fff url(../img/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  section .container header.active ul {
+    display: flex;
+  }
+  section .container .content .bannerText {
+    max-width: 100%;
+    text-align: center;
+  }
+  section .container .content .bannerText div h2 {
+    font-size: 3em;
+  }
+  section .container .controls li {
+    width: 60px;
+    height: 60px;
+  }
+}/*# sourceMappingURL=style.css.map */
