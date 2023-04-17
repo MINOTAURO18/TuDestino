@@ -308,7 +308,7 @@ section .section-two .cards .card:hover {
   width: 100%;
   padding: 3vh 0 0;
   display: grid;
-  gap: 2rem;
+  gap: 4.2rem;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
 }
 .section-three .sobre .sobre2 p {
@@ -321,7 +321,7 @@ section .section-two .cards .card:hover {
   align-items: center;
 }
 .section-three .sobre .sobre2 div img {
-  width: 500px;
+  width: 480px;
   height: auto;
   border-radius: 7px;
 }
@@ -359,6 +359,11 @@ section .section-two .cards .card:hover {
 }
 .section-three .sobre .sobre3 .paque span {
   color: #d05d05;
+  cursor: pointer;
+}
+.section-three .sobre .sobre3 .paque span:hover {
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
 }
 @media (max-width: 529px) {
   .section-three .sobre .sobre3 .sobre3 {
@@ -395,8 +400,16 @@ section .section-two .cards .card:hover {
   justify-content: space-between;
   align-items: center;
 }
+.footer .info span {
+  cursor: pointer;
+}
+.footer .info span:hover {
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
 .footer .info .hecho {
   font-weight: 700;
+  cursor: default;
 }
 .footer .info div {
   display: flex;

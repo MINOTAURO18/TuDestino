@@ -357,7 +357,7 @@ section {
         width: 100%;
         padding: 3vh 0 0;
         display: grid;
-        gap: 2rem;
+        gap: 4.2rem;
         grid-template-columns: repeat(auto-fill,minmax(25rem,1fr));
 
          p{
@@ -372,7 +372,7 @@ section {
          }
 
          div img{
-          width: 500px;
+          width: 480px;
           height: auto;
           border-radius: 7px;
          }
@@ -413,6 +413,12 @@ section {
 
            span{
             color: #d05d05;
+            cursor: pointer;
+           }
+
+           span:hover{
+             text-decoration: underline;
+             transition: all .2s ease-in-out;
            }
 
          }
@@ -465,9 +471,19 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+     
+     span{
+      cursor: pointer;
+     }
+
+     span:hover{
+       text-decoration: underline;
+       transition: all .2s ease-in-out;
+     }
 
      .hecho{
       font-weight: 700;
+      cursor: default;
      }
 
      
