@@ -6,6 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+span, h1 , h2 , h3 , h4 , h5 , h6 , p{
+  cursor: default;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -378,6 +382,16 @@ section {
            } 
          }
        }
+       @media (max-width: 470px){
+        .sobre2{
+          width: 100%;
+          padding: 3vh 0 0;
+          display: grid;
+          gap: 2rem;
+          grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
+         }
+       }
+
 
        .sobre3{
         margin-bottom: 30px;
@@ -385,7 +399,7 @@ section {
         height: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
         gap: 30px;
 
          .paque{
@@ -395,12 +409,17 @@ section {
           padding:0 10px ;
           gap: 10px;
           width: 210px;
-          height: 250px;
+          height: 200px;
 
            span{
             color: #d05d05;
            }
 
+         }
+         @media (max-width: 529px){
+            .sobre3{
+              gap: 2px;
+            }
          }
        }
    }
@@ -440,12 +459,26 @@ section {
     justify-content: space-between;
     align-items: center;
 
+     .hecho{
+      font-weight: 700;
+     }
+
+     
+
      div{
       display: flex;
       flex-direction: column;
       width: 210px;
       height: 140px;
+
+       
      }
+   }
+   @media (max-width: 498px){
+    .info{
+      justify-content: center;
+    }
+
    }
 
    .logos{
