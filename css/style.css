@@ -383,6 +383,11 @@ section .section-two .cards .card:hover {
   display: flex;
   gap: 20px;
 }
+@media (max-width: 498px) {
+  .footer .redes {
+    justify-content: center;
+  }
+}
 .footer .info {
   margin-top: 30px;
   display: flex;
@@ -402,6 +407,7 @@ section .section-two .cards .card:hover {
 @media (max-width: 498px) {
   .footer .info {
     justify-content: center;
+    text-align: center;
   }
 }
 .footer .logos {

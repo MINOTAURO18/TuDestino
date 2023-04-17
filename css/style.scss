@@ -450,6 +450,13 @@ section {
       gap: 20px;
      }
    }
+   @media (max-width: 498px){
+    .redes{
+      justify-content: center;
+    }
+   }
+
+
 
    .info{
     
@@ -477,6 +484,7 @@ section {
    @media (max-width: 498px){
     .info{
       justify-content: center;
+      text-align: center;
     }
 
    }
